@@ -3,11 +3,11 @@
       padding: 0%;
       font-family: Work Sans;
 }
-
+/*---------------------Nav Bar ----------------------------*/
 .Nav{
       display: flex;
       justify-content: space-between;
-      padding: 46px 140px;
+      padding: 20px 140px;
       font-size: 1rem;
       color:#3C354F;
       box-shadow: 0px 3px 0px 0px rgba(236, 229, 229, 0.333);
@@ -45,24 +45,89 @@ ul > li >a{
      
 }
 
+/*---------------------Banner Part ----------------------------*/
+
+.banner{
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 0px;
+      justify-content: space-between;
+      margin: 0px 0px;
+      padding: 0px 150px;
+      background-image: url(images/Group\ 14.png);
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      
+      
+}
+.banner .text{
+      width: fit-content;
+      align-items: center;
+      padding: 80px;
+     
+}
+.imaag img{
+      width: 550px;
+}
+.text h2{
+      color: #0B0223;
+      
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+}
+.text h1{
+      font-size: 95px;
+      font-style: normal;
+      font-weight: 800;
+      background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+p{
+      color: #534C64;
+      font-size: 1.1rem;
+      font-style: normal;
+      font-weight: 500;
+}
+.unv-btn1{
+      padding: 20px 40px;
+      font-size: 1.1rem;
+      border-radius: 48px;
+      background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+      border: none;
+      color: white;
+      margin-top: 20px;
 
 
+}
+.unv-btn2{
+      padding: 20px 40px;
+      font-size: 1.1rem;
+      border-radius: 48px;
+      border: none;
+      color: white;
+      background-color: #4EC5F7;
 
+}
 /*---------------------Media Query ----------------------------*/
 
 @media (max-width: 425px) { 
       .Nav{
             display: block;
             width: max-content;
-            padding: 75px 30px;
+            padding: 75px 0px;
             width: max-content;
             margin: auto;
             box-shadow: none;
+            background-position: left center;
             
       }
       .list ul{
             flex-direction: column;
             margin-top: 0px;
+            padding: opx;
             
       }
       .btn{
@@ -71,7 +136,50 @@ ul > li >a{
       .list ul li{
             margin-top: 20px;
       }
+      .Nav .logo{
+            margin: 0px;
+            padding: 0px;
+      }
+      /* banner*/
+
+     .row{
+      flex-direction: row-reverse;
+     }
+      .banner{
+      flex-direction:column;
+      padding: 0px;
+      margin: 0px;         
+      }
+     
+      .text h1{
+            padding: 0px;
+            margin: 0px;
+            font-size: 59px;
+            font-style: normal;
+            font-weight: 800;
+
+      }
+        .text h2{
+            font-size: 2rem;
+
+        }
+        .unv-btn1, .unv-btn2{
+            font-size: 0.8rem;
+            padding: 10px 20px;
+        }
+        .imaag img{
+            width: 350px;
+            padding-left: 30px;
+            padding-right: 40px;
+            background-color:white;
+        }
+       
 }
+
+
+
+
+
 
 
 @media (max-width: 768px) { 
