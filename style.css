@@ -111,6 +111,61 @@ p{
       background-color: #4EC5F7;
 
 }
+
+/*---------------------Footer Part ----------------------------*/
+.footer{
+      padding-top: 120px;
+      padding-bottom: 120px;
+      background-color:#0B0223;
+}
+.two{
+      display: flex;
+      font-size: 1rem;
+      gap: 15px;
+      width: fit-content;
+      margin: auto;
+}
+.sec-nav{
+      padding: 60px 0px;
+      display: flex;
+      color: white;
+      font-size: .8rem;
+     
+      width: fit-content;
+      margin: auto;
+      gap: 30px;
+}
+.social-btn{
+      width: fit-content;
+      margin: auto;
+}
+.soc-btn{
+      padding: 10px;
+      background-color: #0B0223;
+      border: 0px;
+      
+}
+.term{
+      display: flex;
+      width: fit-content;
+      margin: auto;
+      gap: 30px;
+      padding-top: 30px;
+}
+.last{
+      width: fit-content;
+      margin: auto;
+      gap: 30px;
+      padding-top: 30px;
+}
+
+h6{
+      color:rgba(255, 255, 255, 1);
+}
+
+
+
+
 /*---------------------Media Query ----------------------------*/
 
 @media (max-width: 425px) { 
@@ -173,6 +228,22 @@ p{
             padding-right: 40px;
             background-color:white;
         }
+        /*footer art*/
+            
+        .sec-nav {
+           display: grid;
+           grid-template-columns: auto auto auto;
+        }
+        .soc-btn{
+
+        }
+        .term{
+           display: grid;
+           grid-template-columns: auto auto ;
+        }
+       
+       
+      
        
 }
 
@@ -192,5 +263,41 @@ p{
            margin-left: 90px;
            margin-bottom: 30px;
          }
+
+      /* banner*/
+
+
+          .row{
+      flex-direction: row-reverse;
+     }
+      .banner{
+      flex-direction:column;
+      padding: 0px;
+      margin: 0px; 
+      background-position: 0px 100px;        
+      }
+     
+      .text h1{
+            padding: 0px;
+            margin: 0px;
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 800;
+
+      }
+        .text h2{
+            font-size: 2.5rem;
+
+        }
+        .unv-btn1, .unv-btn2{
+            font-size: 1rem;
+            padding: 20px 40px;
+        }
+        .imaag img{
+            width: 600px;
+            padding-left: 30px;
+           
+            
+        }
 
  }
