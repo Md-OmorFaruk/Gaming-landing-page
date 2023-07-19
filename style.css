@@ -283,7 +283,7 @@ h6{
 
 
 
-@media screen and (max-width: 525px) { 
+@media screen and (max-width: 425px) { 
      .Nav{
             display: block;
             width: max-content;
@@ -354,6 +354,7 @@ h6{
         .writing{
       padding-top: 0px;
        text-align: center;
+       
 }
         .writing p{
             padding-top: 30px;
@@ -425,8 +426,174 @@ h6{
 .container:hover .overlay{
       opacity:1;
 }
+ .sec-nav {
+           display: grid;
+           grid-template-columns: auto auto auto;
+           
+        }
+       
+        .term{
+           display: grid;
+           grid-template-columns: auto auto ;
+           
+        }
+
 }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
+      .Nav{
+            display: block;
+            width: max-content;
+            padding: 75px 0px;
+            width: max-content;
+            margin: auto;
+            box-shadow: none;
+            background-position: left center;
+            
+      }
+      .list ul{
+            flex-direction: column;
+            margin-top: 0px;
+            padding: opx;
+            
+      }
+      .btn{
+            margin-top: 20px;
+      }
+      .list ul li{
+            margin-top: 20px;
+      }
+      .Nav .logo{
+            margin: 0px;
+            padding: 0px;
+      }
+      .row{
+      flex-direction: row-reverse;
+     }
+      .banner{
+      flex-direction:column;
+      padding: 0px;
+      margin: 0px;         
+      }
+     
+      .text h1{
+            padding: 0px;
+            margin: 0px;
+            font-size: 59px;
+            font-style: normal;
+            font-weight: 800;
+
+      }
+        .text h2{
+            font-size: 2rem;
+
+        }
+        .unv-btn1, .unv-btn2{
+            font-size: 0.8rem;
+            padding: 10px 20px;
+        }
+        .imaag img{
+            width: 350px;
+            padding-left: 30px;
+            padding-right: 40px;
+            background-color:white;
+        }
+
+        /*second banner*/
+        .sec-banner{
+            flex-direction: column;
+            padding: 5px;
+            margin: 0px;
+        }
+        .ban-img img{
+            width: 350px;
+        }
+        .writing{
+      padding-top: 0px;
+       text-align: center;
+       
+}
+        .writing p{
+            padding-top: 30px;
+        }
+        .third-sec{
+            flex-direction: column;
+            padding: 0px;
+            margin: 0px;
+            gap: 20px;
+            
+        }
+        .hp{
+            text-align: center;
+        }
+        
+        .imaag img{
+            width: 350px;
+            padding: 20px;
+        }
+        .small img{
+            padding: 0px;
+            width:100px;
+            position: relative;
+            bottom: 70px;
+            left: 0px;
+        }
+
+        .comlogo{
+            display: flex;
+            flex-direction: column;
+        }
+        .Main{
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+        }
+        .container{
+     
+   
+     
+     
+      transform:translate(0%, 0%);
+      box-shadow: 0 10px 20px rgb(red,green,blue);
+}
+.overlay img{
+      width: 50px;
+}
+.overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity:0;
+      transition: opacity 0.4s ease-in-out;
+      background: rgb(255, 255, 255);
+      cursor: pointer;
+}
+.content{
+      position: absolute;
+      top: 40%;
+      left:40%;
+      transform:translate(-50%, -50%);
+      color: rgb(23, 23, 23);
+      text-align: center;
+
+      
+}
+.container:hover .overlay{
+      opacity:1;
+}
+ .sec-nav {
+           display: grid;
+           grid-template-columns: auto auto auto;
+           
+        }
+       
+        .term{
+           display: grid;
+           grid-template-columns: auto auto ;
+           
+        }
+
 
 }
