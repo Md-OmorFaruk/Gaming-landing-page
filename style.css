@@ -3,3 +3,86 @@
       padding: 0%;
       font-family: Work Sans;
 }
+
+.Nav{
+      display: flex;
+      justify-content: space-between;
+      padding: 46px 140px;
+      font-size: 1rem;
+      color:#3C354F;
+      box-shadow: 0px 3px 0px 0px rgba(236, 229, 229, 0.333);
+     
+      
+}
+.logo{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+}
+.logo h1{
+      font-size: 2.7rem;
+}
+.list ul{
+      display: flex;
+     
+}
+ul ,li{
+      list-style: none;
+      align-items: center;
+
+}
+ul > li >a{
+      text-decoration: none;
+       margin-right: 35px;
+}
+.btn{
+      font-size: 1rem;
+      padding: 16px 25px;
+      border-radius: 8px;
+      background: rgba(11, 2, 35, 0.10);
+      border: 0px;
+     
+}
+
+
+
+
+/*---------------------Media Query ----------------------------*/
+
+@media (max-width: 425px) { 
+      .Nav{
+            display: block;
+            width: max-content;
+            padding: 75px 30px;
+            width: max-content;
+            margin: auto;
+            box-shadow: none;
+            
+      }
+      .list ul{
+            flex-direction: column;
+            margin-top: 0px;
+            
+      }
+      .btn{
+            margin-top: 20px;
+      }
+      .list ul li{
+            margin-top: 20px;
+      }
+}
+
+
+@media (max-width: 768px) { 
+         .Nav{
+            display: flex;
+            flex-direction: column;
+            
+         }
+         .logo{
+           margin-left: 90px;
+           margin-bottom: 30px;
+         }
+
+ }
