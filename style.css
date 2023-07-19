@@ -285,6 +285,10 @@ h6{
 
 
 @media screen and (max-width: 425px) { 
+      *{
+            margin-right: 0px;
+            padding-right: 0px;
+      }
      .Nav{
             display: block;
             width: max-content;
