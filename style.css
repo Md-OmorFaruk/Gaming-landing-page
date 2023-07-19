@@ -54,10 +54,10 @@ ul > li >a{
       justify-content: space-between;
       margin: 0px 0px;
       padding: 0px 150px;
-      background-image: url(images/Group\ 14.png);
+      background-image: url('images/Group 14.png');
       background-repeat: no-repeat;
       background-position: left bottom;
-      
+    
       
 }
 .banner .text{
