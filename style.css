@@ -111,9 +111,124 @@ p{
       background-color: #4EC5F7;
 
 }
+.card{
+      text-align: center;
+      padding: 10px;
+}
+
+.Main{
+      padding: 50px 50px;
+      display: flex;
+      justify-content: space-around;
+
+}
+.container{
+     
+   
+     
+     
+      transform:translate(0%, 0%);
+      box-shadow: 0 10px 20px rgb(red,green,blue);
+}
+.overlay img{
+      width: 50px;
+}
+.overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity:0;
+      transition: opacity 0.4s ease-in-out;
+      background: rgb(255, 255, 255);
+      cursor: pointer;
+}
+.content{
+      position: absolute;
+      top: 40%;
+      left:40%;
+      transform:translate(-50%, -50%);
+      color: rgb(23, 23, 23);
+      text-align: center;
+
+      
+}
+.container:hover .overlay{
+      opacity:1;
+}
+/*secont Banner*/
+.sec-banner{
+      display: flex;
+      justify-content: space-between;
+      gap:50px;
+      padding: 50px 150px;
+      background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.writing{
+      padding-top: 80px;
+       direction: rtl;
+}
+.ban-img img{
+      width:600px;
+
+}
+.third-sec{
+      display: flex;
+      padding: 110px 200px 0px 200px;
+      gap:250px;
+}
+.hp{
+      text-align: right;
+      padding-top: 150px;
+    font-weight: 700;
+
+}
+.small img{
+      width: 250px;
+      position: relative;
+      bottom: 200px;
+      right: 50px;
+}
+.comlogo{
+      display: flex;
+      gap: 10px;
+      padding: 0px 150px;
+}
+.one{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+    
+      
+}
+.twin{
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      gap: 10px;
+}
+.comlogo1{
+      display: flex;
+       gap: 20px;
+      padding: 0px 250px;
+}
+.one:hover{
+      border: 1px solid #FF42A5;
+      border-radius: 40px;
+      color: #FF42A5;
+}
+.twin:hover{
+      border: 1px solid #FF42A5;
+      border-radius: 40px;
+      color: #FF42A5;
+}
+
 
 /*---------------------Footer Part ----------------------------*/
 .footer{
+      margin-top: 80px;
       padding-top: 120px;
       padding-bottom: 120px;
       background-color:#0B0223;
@@ -166,10 +281,10 @@ h6{
 
 
 
-/*---------------------Media Query ----------------------------*/
 
-@media (max-width: 425px) { 
-      .Nav{
+
+@media screen and (max-width: 525px) { 
+     .Nav{
             display: block;
             width: max-content;
             padding: 75px 0px;
@@ -195,9 +310,7 @@ h6{
             margin: 0px;
             padding: 0px;
       }
-      /* banner*/
-
-     .row{
+      .row{
       flex-direction: row-reverse;
      }
       .banner{
@@ -228,76 +341,92 @@ h6{
             padding-right: 40px;
             background-color:white;
         }
-        /*footer art*/
-            
-        .sec-nav {
-           display: grid;
-           grid-template-columns: auto auto auto;
-        }
-        .soc-btn{
 
-        }
-        .term{
-           display: grid;
-           grid-template-columns: auto auto ;
-        }
-       
-       
-      
-       
-}
-
-
-
-
-
-
-
-@media (max-width: 768px) { 
-         .Nav{
-            display: flex;
+        /*second banner*/
+        .sec-banner{
             flex-direction: column;
-            
-         }
-         .logo{
-           margin-left: 90px;
-           margin-bottom: 30px;
-         }
-
-      /* banner*/
-
-
-          .row{
-      flex-direction: row-reverse;
-     }
-      .banner{
-      flex-direction:column;
-      padding: 0px;
-      margin: 0px; 
-      background-position: 0px 100px;        
-      }
-     
-      .text h1{
+            padding: 5px;
+            margin: 0px;
+        }
+        .ban-img img{
+            width: 350px;
+        }
+        .writing{
+      padding-top: 0px;
+       text-align: center;
+}
+        .writing p{
+            padding-top: 30px;
+        }
+        .third-sec{
+            flex-direction: column;
             padding: 0px;
             margin: 0px;
-            font-size: 4rem;
-            font-style: normal;
-            font-weight: 800;
-
-      }
-        .text h2{
-            font-size: 2.5rem;
-
-        }
-        .unv-btn1, .unv-btn2{
-            font-size: 1rem;
-            padding: 20px 40px;
-        }
-        .imaag img{
-            width: 600px;
-            padding-left: 30px;
-           
+            gap: 20px;
             
         }
+        .hp{
+            text-align: center;
+        }
+        
+        .imaag img{
+            width: 350px;
+            padding: 20px;
+        }
+        .small img{
+            padding: 0px;
+            width:100px;
+            position: relative;
+            bottom: 70px;
+            left: 0px;
+        }
 
- }
+        .comlogo{
+            display: flex;
+            flex-direction: column;
+        }
+        .Main{
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+        }
+        .container{
+     
+   
+     
+     
+      transform:translate(0%, 0%);
+      box-shadow: 0 10px 20px rgb(red,green,blue);
+}
+.overlay img{
+      width: 50px;
+}
+.overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity:0;
+      transition: opacity 0.4s ease-in-out;
+      background: rgb(255, 255, 255);
+      cursor: pointer;
+}
+.content{
+      position: absolute;
+      top: 40%;
+      left:40%;
+      transform:translate(-50%, -50%);
+      color: rgb(23, 23, 23);
+      text-align: center;
+
+      
+}
+.container:hover .overlay{
+      opacity:1;
+}
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+
+}
